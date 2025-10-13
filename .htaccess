@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://www.gallien-ventures.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} !^www\.gallien-ventures.com\.de [NC]
+RewriteRule ^(.*)$ https://www.gallien-ventures.com/$1 [R=301,L]
