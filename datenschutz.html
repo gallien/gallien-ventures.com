@@ -33,7 +33,7 @@
 <body class="privacy">
 
 <div class="viewport">
-    <div class="bg" aria-hidden="true">
+    <div class="bg hidden-mobile" aria-hidden="true">
         <picture>
             <source srcset="assets/images/gallien_ventures_s.jpg 1280w, assets/images/gallien_ventures_m.jpg 1536w, assets/images/gallien_ventures_l.jpg 1920w, assets/images/gallien_ventures_xl.jpg 2560w, assets/images/gallien_ventures_xxl.jpg 3840w" media="(min-width: 640px)">
             <img src="assets/images/gallien_ventures_s.jpg"
@@ -44,8 +44,14 @@
 
     <main class="container" role="main">
         <header>
-            <a href="./"><img src="assets/images/logo.svg" width="130" alt="Logo" /></a>
-            <hr />
+            <a href="./"><img src="assets/images/logo.svg" width="180" alt="Logo" /></a>
+            <picture class="visible-mobile">
+                <source srcset="assets/images/gallien_ventures_s.jpg 1280w, assets/images/gallien_ventures_m.jpg 1536w, assets/images/gallien_ventures_l.jpg 1920w, assets/images/gallien_ventures_xl.jpg 2560w, assets/images/gallien_ventures_xxl.jpg 3840w" media="(min-width: 640px)">
+                <img src="assets/images/gallien_ventures_s.jpg"
+                     srcset="assets/images/gallien_ventures_mobil_xs.jpg 640w, assets/images/gallien_ventures_mobil_s.jpg 1080w, assets/images/gallien_ventures_mobil_m.jpg 1440w, assets/images/gallien_ventures_mobil_l.jpg 2048w"
+                     sizes="100vw" class="w-100" alt="" loading="eager" fetchpriority="high" decoding="async" />
+            </picture>
+            <hr class="hidden-mobile" />
             <h2>Datenschutz</h2>
             <h3>1. Datenschutz auf einen Blick</h3>
             <h4>Allgemeine Hinweise</h4>
