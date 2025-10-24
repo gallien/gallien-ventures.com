@@ -8,7 +8,7 @@
     <meta name="robots" content="index,follow">
     <meta property="og:title" content="Gallien Ventures GmbH">
     <meta property="og:description" content="Gallien Ventures - Technologie. Strategie. Wachstum.">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://www.gallien-ventures.com/assets/images/gallien_ventures_fb_02.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.gallien-ventures.com">
     <link rel="stylesheet" href="assets/styles/custom.css">
@@ -33,7 +33,7 @@
 <body>
 
 <div class="viewport">
-    <div class="bg" aria-hidden="true">
+    <div class="bg hidden-mobile" aria-hidden="true">
         <picture>
             <source srcset="assets/images/gallien_ventures_s.jpg 1280w, assets/images/gallien_ventures_m.jpg 1536w, assets/images/gallien_ventures_l.jpg 1920w, assets/images/gallien_ventures_xl.jpg 2560w, assets/images/gallien_ventures_xxl.jpg 3840w" media="(min-width: 640px)">
             <img src="assets/images/gallien_ventures_s.jpg"
@@ -44,9 +44,15 @@
 
     <main class="container" role="main">
         <header>
-            <a href="./"><img src="assets/images/logo.svg" width="130" alt="Logo" /></a>
-            <hr />
-            <h1>Technologie. Strategie. Wachstum.</h1>
+            <a href="./"><img src="assets/images/logo.svg" width="180" alt="Logo" /></a>
+            <picture class="visible-mobile">
+                <source srcset="assets/images/gallien_ventures_s.jpg 1280w, assets/images/gallien_ventures_m.jpg 1536w, assets/images/gallien_ventures_l.jpg 1920w, assets/images/gallien_ventures_xl.jpg 2560w, assets/images/gallien_ventures_xxl.jpg 3840w" media="(min-width: 640px)">
+                <img src="assets/images/gallien_ventures_s.jpg"
+                     srcset="assets/images/gallien_ventures_mobil_xs.jpg 640w, assets/images/gallien_ventures_mobil_s.jpg 1080w, assets/images/gallien_ventures_mobil_m.jpg 1440w, assets/images/gallien_ventures_mobil_l.jpg 2048w"
+                     sizes="100vw" class="w-100" alt="" loading="eager" fetchpriority="high" decoding="async" />
+            </picture>
+            <hr class="hidden-mobile" />
+            <h1>Technologie.<br>Strategie.<br>Wachstum.</h1>
             <p>Gallien Ventures investiert in zukunftsweisende Ideen und begleitet Unternehmen bei der Entwicklung digitaler Lösungen. Mit unternehmerischem Denken, technischer Exzellenz und strategischer Beratung schaffen wir nachhaltigen Mehrwert.</p>
             <div class="cta-container">
                 <a href="tel:+493025785767" class="cta" title="Anruf">Anruf</a>
@@ -54,7 +60,7 @@
             </div>
         </header>
         <footer>
-            <img src="assets/images/icon_kontakt.svg" width="40" height="40" alt="Kontakt" />
+            <img src="assets/images/icon_kontakt.svg" width="60" height="60" alt="Kontakt" />
             <ul class="contact">
                 <li><strong>Gallien Ventures GmbH</strong></li>
                 <li>Schwarzmeerstraße 42, 10319 Berlin</li>
