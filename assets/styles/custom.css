@@ -33,6 +33,17 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Silka';
+    src: url('../fonts/silka-bold-webfont.eot');
+    src: url('../fonts/silka-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/silka-bold-webfont.woff2') format('woff2'),
+    url('../fonts/silka-bold-webfont.woff') format('woff'),
+    url('../fonts/silka-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     font-family: 'Silka', sans-serif;
     background: #0e1116;
@@ -62,7 +73,7 @@ a:focus {
 }
 
 strong {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .viewport {
